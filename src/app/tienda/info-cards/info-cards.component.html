@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+      <div class="col col-sm-12 col-md-6 col-lg-4" *ngFor="let infoCard of infoCards">
+        <img [src]="infoCard.imagen" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{infoCard.descripcion}}</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus inventore
+            exercitationem
+            provident</p>
+        </div>
+      </div>
+    </div>
+  </div>

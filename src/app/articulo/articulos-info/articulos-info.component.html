@@ -1,0 +1,24 @@
+<h1>Info articulos</h1>
+
+<div class="container">
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img [src]="article.imagen" class="card-img-top" alt="Foto {{article.descripcionArticulo}}">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{article.descripcionArticulo}}</h5>
+                    <div *ngIf="article.precioOferta < article.precio; else precioOriginal">
+                        <p class="card-text" id="precioOriginal">Precio original: {{article.precio | currency:"EUR":"€"}}</p>
+                        <span class="card-text">Oferta: </span><span id="precioOferta"> {{article.precioOferta |
+                            currency:"EUR":"€"}}</span>
+                    </div>
+                    <ng-template #precioOriginal>
+                        <p class="card-text">Precio: {{article.precio | currency:"EUR":"€"}} </p>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

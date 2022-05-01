@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col col-sm-12 col-md-6 col-lg-3" *ngFor="let article of articles">
+        <div class="card">
+            <img class="card-img-top" [src]="article.imagen" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ article.nombre }}</h5>
+                <p class="card-text">{{ article.descripcionArticulo }}</p>
+                <a class="btn btn-primary" (click)="navigateArticle(article.id)">Información del artículo</a>
+            </div>
+        </div>
+    </div>
+</div>

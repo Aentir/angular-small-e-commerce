@@ -1,0 +1,11 @@
+<div class="container" *ngIf="categorias.length">
+    <div class="row">
+      <div class="col col-sm-12 col-md-6 col-lg-2" *ngFor="let categoria of categorias">
+        <a [routerLink]="categoria.path"><img [src]="categoria.imagen" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">{{ categoria.nombre }}</h5>
+          <p class="card-text">{{ categoria.descripcion }}</p>
+        </div>
+      </div>
+    </div>
+  </div>

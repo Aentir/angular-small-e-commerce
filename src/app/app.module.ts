@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,11 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TiendaComponent } from './tienda/tienda.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
+import { VeranoComponent } from './categorias/verano/verano.component';
+import { ArticulosInfoComponent } from './articulo/articulos-info/articulos-info.component';
+import { CarouselComponent } from './tienda/carousel/carousel.component';
+import { InfoCardsComponent } from './tienda/info-cards/info-cards.component';
+import { CategoriasComponent } from './tienda/categorias/categorias.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +21,18 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
     NavbarComponent,
     FooterComponent,
     TiendaComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    VeranoComponent,
+    ArticulosInfoComponent,
+    CarouselComponent,
+    InfoCardsComponent,
+    CategoriasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
