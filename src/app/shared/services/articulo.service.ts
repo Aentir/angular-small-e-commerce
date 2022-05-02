@@ -19,7 +19,7 @@ export class ArticuloService {
     return this.http.get<IArticulo[]>(urlEndPoint);
   }
 
-  public getSummerArticleById(id: any): Observable<IArticulo> {
+  public getSummerArticleById(id: string): Observable<IArticulo> {
     const urlEndPoint: string = this.url + `verano/articuloInfo/${id}`;
     console.log(urlEndPoint);
     return this.http.get<IArticulo>(urlEndPoint);

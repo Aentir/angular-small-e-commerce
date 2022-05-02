@@ -22,7 +22,7 @@ export class ArticulosInfoComponent implements OnInit {
 
   ngOnInit(): void {
     let idArticle = this.route.snapshot.paramMap.get('idArticle');
-    this.articleService.getSummerArticleById(idArticle).subscribe((data: Articulo) => {
+    this.articleService.getSummerArticleById(idArticle as unknown as string).subscribe((data: Articulo) => {
       this.article = data;
     });
   }
