@@ -4,12 +4,9 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { IinfoCards } from '../models/infoCards.interface';
 
-
 @Injectable({
     providedIn: 'root'
 })
-
-
 
 export class InfoCardsService {
     url = environment.dev;
@@ -19,7 +16,6 @@ export class InfoCardsService {
         
     }
 
-    //Devuelve lista de fotos del carrusel
     public getInfoCardsRest(): Observable<IinfoCards[]> {
         const urlEndPoint: string = this.url + `infoCards`;
         return this.http.get<IinfoCards[]>(urlEndPoint);

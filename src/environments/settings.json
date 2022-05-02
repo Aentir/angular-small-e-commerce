@@ -1,0 +1,22 @@
+{
+  "welcomeShown": true,
+  "analytics": true,
+  "bannerDismissed": [],
+  "logSizeLimit": 10000,
+  "maxLogsPerEnvironment": 50,
+  "truncateRouteName": true,
+  "environmentMenuSize": 134,
+  "routeMenuSize": 265,
+  "logsMenuSize": 150,
+  "fakerLocale": "en",
+  "fakerSeed": null,
+  "lastChangelog": "1.18.1",
+  "environments": [
+    {
+      "uuid": "a6e5d960-d585-46a8-b470-e65544604aef",
+      "path": "C:\\Users\\Aentir\\AppData\\Roaming\\mockoon\\storage\\demo.json"
+    }
+  ],
+  "enableTelemetry": true,
+  "storagePrettyPrint": true
+}

@@ -22,13 +22,12 @@ export class VeranoComponent implements OnInit {
     this.getArticlesRest();
   }
 
-  //Navega a la ruta especificada y coge el parámetro
   public navigateArticle(idArticle: number): void {
     this.router.navigate(['verano/articuloInfo', idArticle])
   }
 
   private getArticlesRest(){
-    this.articuloService.getArticlesRest().subscribe(
+    this.articuloService.getSummerArticlesRest().subscribe(
       (data) => {
         data.forEach( (articulo) => {
              this.articles.push(articulo);

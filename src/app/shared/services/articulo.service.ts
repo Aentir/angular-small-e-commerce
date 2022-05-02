@@ -4,7 +4,6 @@ import { Observable } from 'rxjs';
 import { IArticulo } from '../models/articulo.interface';
 import { environment } from 'src/environments/environment';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -15,12 +14,12 @@ export class ArticuloService {
     private http: HttpClient
   ) { }
 
-  public getArticlesRest(): Observable<IArticulo[]> {
+  public getSummerArticlesRest(): Observable<IArticulo[]> {
     const urlEndPoint: string = this.url + `verano`;
     return this.http.get<IArticulo[]>(urlEndPoint);
   }
 
-  public getArticleById(id: any): Observable<IArticulo> {
+  public getSummerArticleById(id: any): Observable<IArticulo> {
     const urlEndPoint: string = this.url + `verano/articuloInfo/${id}`;
     console.log(urlEndPoint);
     return this.http.get<IArticulo>(urlEndPoint);

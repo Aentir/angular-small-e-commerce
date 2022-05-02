@@ -1,4 +1,4 @@
-<h1>Info articulos</h1>
+<h1>Info articulo</h1>
 
 <div class="container">
     <div class="card mb-3">
@@ -17,12 +17,9 @@
                     <ng-template #precioOriginal>
                         <p class="card-text">Precio: {{article.precio | currency:"EUR":"€"}} </p>
                     </ng-template>
-                    <div *ngIf="article.favourite == true; else nonFavourite">
+                    <div *ngIf="article.favourite == true">
                        <fa-icon [icon]="favourite"></fa-icon>
                     </div>
-                    <ng-template #nonFavourite>
-
-                    </ng-template>
                     <a class="btn btn-primary" [routerLink]="['/verano']">Volver atrás</a>
                 </div>
             </div>

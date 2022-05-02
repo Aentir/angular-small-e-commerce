@@ -4,12 +4,9 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { ICarousel } from '../models/carousel.interface';
 
-
 @Injectable({
     providedIn: 'root'
 })
-
-
 
 export class CarouselService {
     url = environment.dev;
@@ -19,7 +16,6 @@ export class CarouselService {
         
     }
 
-    //Devuelve lista de fotos del carrusel
     public getCarouselPicturesRest(): Observable<ICarousel[]> {
         const urlEndPoint: string = this.url + `carousel`;
         return this.http.get<ICarousel[]>(urlEndPoint);
