@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 import { Articulo } from 'src/app/shared/models/articulo.model';
 import { ArticuloService } from 'src/app/shared/services/articulo.service';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { IArticulo } from 'src/app/shared/models/articulo.interface';
 
 @Component({
   selector: 'app-articulos-info',
@@ -23,7 +22,7 @@ export class ArticulosInfoComponent implements OnInit {
 
   ngOnInit(): void {
     let idArticle = this.route.snapshot.paramMap.get('idArticle');
-    this.articleService.getSummerArticleById(idArticle).subscribe((data: IArticulo) => {
+    this.articleService.getSummerArticleById(idArticle).subscribe((data: Articulo) => {
       this.article = data;
     });
   }
