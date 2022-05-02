@@ -14,6 +14,7 @@ import { ArticulosInfoComponent } from './articulo/articulos-info/articulos-info
 import { CarouselComponent } from './tienda/carousel/carousel.component';
 import { InfoCardsComponent } from './tienda/info-cards/info-cards.component';
 import { CategoriasComponent } from './tienda/categorias/categorias.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CategoriasComponent } from './tienda/categorias/categorias.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

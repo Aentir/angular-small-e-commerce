@@ -5,4 +5,5 @@ export interface IArticulo {
     precioOferta: number;
     descripcion?: string;
     imagen?: string;
+    favourite: boolean;
 }

@@ -2,10 +2,11 @@ nav {
     background-color: rgb(26, 26, 26);
 }
 
-button {
-    color: blue;
+.navbar>.container-fluid {
+    justify-content: center;
 }
 
-nav > div > div > ul > li > a {
-    color: red;
+img {
+    width: 70px;
+    height: 70px;
 }

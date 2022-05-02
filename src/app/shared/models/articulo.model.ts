@@ -5,6 +5,7 @@ export class Articulo {
     precioOferta: number;
     descripcionArticulo?: string;
     imagen?: string;
+    favourite: boolean;
 
     constructor(
     ) {
@@ -14,6 +15,7 @@ export class Articulo {
         this.precioOferta = 0;
         this.descripcionArticulo = '';
         this.imagen = '';
+        this.favourite = true;
     }
 
 }

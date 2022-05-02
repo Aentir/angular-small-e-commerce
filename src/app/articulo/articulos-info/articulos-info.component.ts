@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Articulo } from 'src/app/shared/models/articulo.model';
 import { ArticuloService } from 'src/app/shared/services/articulo.service';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-articulos-info',
@@ -9,6 +10,8 @@ import { ArticuloService } from 'src/app/shared/services/articulo.service';
   styleUrls: ['./articulos-info.component.scss']
 })
 export class ArticulosInfoComponent implements OnInit {
+
+  favourite = faStar;
 
   article: Articulo = new Articulo();
 

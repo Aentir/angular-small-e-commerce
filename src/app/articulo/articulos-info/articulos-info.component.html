@@ -17,6 +17,13 @@
                     <ng-template #precioOriginal>
                         <p class="card-text">Precio: {{article.precio | currency:"EUR":"€"}} </p>
                     </ng-template>
+                    <div *ngIf="article.favourite == true; else nonFavourite">
+                       <fa-icon [icon]="favourite"></fa-icon>
+                    </div>
+                    <ng-template #nonFavourite>
+
+                    </ng-template>
+                    <a class="btn btn-primary" [routerLink]="['/verano']">Volver atrás</a>
                 </div>
             </div>
         </div>
